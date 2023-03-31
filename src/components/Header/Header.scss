@@ -1,0 +1,113 @@
+.main-header {
+  width: 100%;
+  position: sticky;
+  z-index: 5;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  @media (min-width: 767px) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+  }
+  @media (max-width: 376px) {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 530px;
+  }
+
+  height: 100px;
+  // justify-content: space-between;
+  background-color: #f0e2d7;
+  // @media (min-width: 767px) {
+  //   padding: 1rem;
+  // }
+
+  .header-profile {
+    display: flex;
+    .header-profile-picture {
+      .avatar {
+        margin: 1rem;
+        display: block;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+      }
+    }
+    .header-profile-text {
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+
+      .header-profile-name {
+      }
+      .header-profile-status {
+        font-size: small;
+        color: #9b7e73;
+      }
+    }
+  }
+  .header-button-container {
+    display: none;
+    @media (min-width: 767px) {
+      display: block;
+    }
+
+    padding-top: 1rem;
+    .header-button {
+      @media (max-width: 767px) {
+        width: 115px;
+        padding: 10px;
+      }
+
+      width: 250px;
+      height: 50px;
+      background-color: #c18e7b;
+      border: none;
+      border-radius: 25px;
+      box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+        rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+      padding: 1rem;
+      align-items: center;
+      align-content: center;
+      color: #f0e2d7;
+      &:hover {
+        background-color: #9b7e73;
+      }
+    }
+  }
+  .header-searchbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 1rem;
+    .header-searchbar-icon {
+      font-size: larger;
+      color: #51504b;
+    }
+    .searchbar-wrapper {
+      position: relative;
+      .tricky-searchbar {
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        color: gray;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+      }
+      .headerinput {
+        padding: 0.5rem 1rem;
+        padding-left: 2.2rem;
+        border: 0;
+        outline: 0;
+        border-radius: 5%;
+      }
+    }
+  }
+}

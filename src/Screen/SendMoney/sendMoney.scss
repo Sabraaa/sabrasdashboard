@@ -1,0 +1,80 @@
+.sendmoney-button-container {
+  padding-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sendmoney-button {
+    @media (max-width: 767px) {
+      width: 200px;
+      padding: 10px;
+    }
+
+    width: 250px;
+    height: 50px;
+    background-color: #c18e7b;
+    border: none;
+    border-radius: 25px;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px,
+      rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 48px;
+    padding: 1rem;
+    color: #f0e2d7;
+
+    &:hover {
+      background-color: #9b7e73;
+    }
+  }
+}
+.sendmoney-select-container {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (max-width: 767px) {
+    // margin: 0;
+    // padding: 0;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.sendmoney-input-wrapper {
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  @media (max-width: 767px) {
+    padding: 0;
+  }
+  @media (max-width:376px) {
+    justify-content: center;
+    padding: 1rem;
+    gap:1rem;
+  }
+}
+.form-wrapper {
+  width: 50%;
+  @media (min-width: 767px) {
+    width: 95%;
+  }
+  @media (min-width: 1023px) {
+    width: 80%;
+  }
+  @media (min-width:374px) {
+    width: 100%;
+  }
+}
+.sendmoney-input {
+  width: 250px;
+  border-radius: 10px;
+  height: 40px;
+  border-color: #d8c3bc;
+  outline: 0;
+  @media (min-width: 374px) {
+    width: 45%;
+  }
+}
+.select-your-wallet {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  color: #858a7b;
+}

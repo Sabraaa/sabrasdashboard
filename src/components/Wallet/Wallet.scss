@@ -1,0 +1,16 @@
+.wallet-body {
+  @media (max-width: 767px) {
+    font-size: larger;
+    text-align: center;
+  }
+}
+.wallet-avatar {
+  margin: 1rem;
+  display: block;
+  width: 80px;
+  @media (max-width: 767px) {
+    margin: 0 auto;
+  }
+  height: 80px;
+  border-radius: 50%;
+}

@@ -1,0 +1,18 @@
+.transaction-title{
+    font-weight: bolder;
+    font-size: large;
+    align-items: center;
+    color: #51504b;
+}
+.transaction-chart{
+    width: 100%;
+    height: 10rem;
+    padding: 1rem;
+    font-weight: lighter;
+}
+.transaction-sum{
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    color: #858a7b;
+}
